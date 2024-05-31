@@ -1,16 +1,14 @@
-export const App = () => {
+import {Routes, Route, NavLink} from "react-router-dom"
+import Layout from "Pages/Layout";
+import Movies from  "Pages/Movies"
+export function App(){
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+    <Routes>
+      <Route pats="/" element={<Layout/>}>
+       <Route pats="/Movie" element={<Movies/>}></Route>
+      </Route>
+    </Routes>
     </div>
   );
 };
