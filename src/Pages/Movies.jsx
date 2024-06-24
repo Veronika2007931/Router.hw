@@ -1,9 +1,12 @@
-
+import {Link} from "react-router-dom"
 
 const Movies=()=>{
     return(
        <>
-      <h1>Movie with key word</h1> 
+           <ul>
+            <li><Link to="cast">Cast</Link></li>
+            <li><Link to="details">Details</Link></li>
+        </ul>
        </>
     )
 }
