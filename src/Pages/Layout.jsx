@@ -9,7 +9,7 @@ const Layout =()=>{
                     <NavLink to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/movie">Movies</NavLink>
+                    <NavLink to="/movies">Movies</NavLink>
                 </li>
             </ul>
         </div>

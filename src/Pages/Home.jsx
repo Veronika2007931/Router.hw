@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react"
+import {Link} from "react-router-dom"
 
 function Home(){
     const [trending,setTrending] = useState(null)
@@ -12,8 +13,8 @@ useEffect(()=>{
 return(
     <>
     <h1>Trending today</h1>
-    {trending ?? trending.map(()=>{
-
+    {trending && trending.map((movie)=>{
+      return <Link to= {`/movies/${movie.id}`}>{movie.title}</Link>
     })}
     </>
 )
