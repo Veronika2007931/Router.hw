@@ -10,11 +10,15 @@ useEffect(()=>{
     .then(res => res.json())
     .then(trending => setTrending(trending.results))
 },[])
+
 return(
+    
     <>
+    
     <h1>Trending today</h1>
     {trending && trending.map((movie)=>{
-      return <Link to= {`/movies/${movie.id}`}>{movie.title}</Link>
+        return <li> <Link to= {`/movies/${movie.id}`}>{movie.title}</Link></li>
+      
     })}
     </>
 )
