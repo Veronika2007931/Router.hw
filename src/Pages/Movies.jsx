@@ -5,6 +5,7 @@ const Movies=()=>{
 
     return(
        <>
+       <input type="text" name='input'/>
        </>
     )
 }
