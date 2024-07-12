@@ -31,7 +31,7 @@ function MovieDetails(){
     <p>Users score: {movie.vote_average}</p>
     <h3>Overview</h3>
     <p>{movie.overview}</p>
-    <h3>Geners {movie.genres}</h3></>}
+    <h3>Geners {movie.genres.map((gener)=><li></li>)}</h3></>}
     
     <h1>Additional information</h1>
     <ul>
