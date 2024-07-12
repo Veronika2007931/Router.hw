@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {useParams, Link, Outlet} from "react-router-dom"
-import {Cast} from "../Pages/Cast"
-import {Review} from "../Pages/Reviews"
+import Cast from "./Cast"
+import Reviews from "./Reviews"
 
 function MovieDetails(){
     
@@ -36,7 +36,7 @@ function MovieDetails(){
     <h1>Additional information</h1>
     <ul>
             <li><Link to="cast">{Cast}</Link></li>
-            <li><Link to="reviews">{Review}</Link></li>
+            <li><Link to="reviews">{Reviews}</Link></li>
         </ul>
         <Outlet/>
     </>
