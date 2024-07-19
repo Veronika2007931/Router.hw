@@ -32,7 +32,7 @@ function MovieDetails(){
     <p>{movie.overview}</p>
     <h3>Geners </h3>
     <ul>
-        {movie.geners.map(gener => <li>{gener.name}</li>)}
+        {movie.genres.map(gener => <li>{gener.name}</li>)}
     </ul>
     </>}
     

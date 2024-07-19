@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 function Cast(){
 
     const {movieId} = useParams()
-    const {cast, setCast} = useState()
+    const [cast, setCast] = useState(null)
 
     useEffect(()=>{
         
@@ -19,7 +19,9 @@ function Cast(){
 
     return(
         <>
-         {/* тут якщо об'єкт то за допомогою меп якщо ні то просто */}
+         {/* тут якщо об'єкт то за допомогою меп якщо ні то просто */
+        //  використовувати логічне і
+    }
         </>
     )
 
