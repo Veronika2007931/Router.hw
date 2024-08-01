@@ -15,6 +15,7 @@ useEffect(()=>{
     .then(res=>res.json())
     .then(review => {
         setReview(review)
+        
     })
     .catch(eror=>console.log(eror))
 },[])
@@ -22,8 +23,16 @@ useEffect(()=>{
 
 return(
     <>
-    <h1>Hello</h1>
-    </>
+    <ul>
+        {review.map((review)=>{
+            <li>
+                <h3>Author: {review.author}</h3>
+                <p>{review.content}</p>
+                <p>{review.created_at}</p>
+            </li>
+        })}
+    </ul>
+      </>
 )
 }
 
