@@ -11,8 +11,8 @@ function Cast(){
         fetch(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=4a25f4349798215e63e63f8751c48e4c`)
         .then(res => res.json()) 
         .then(cast => {
-            setCast(cast)
-             console.log("Hi")
+            setCast(cast.cast)
+             
         })
         .catch(eror=>console.log(eror))
 
