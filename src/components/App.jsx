@@ -1,8 +1,9 @@
 import {Routes, Route} from "react-router-dom"
 import {lazy} from "react"
+import { GlobalStyle } from "./globalStyled"
 const Layout = lazy(()=>import("Pages/Layout"))
 const Home = lazy(()=>import("Pages/Home"))
-const Movies = lazy(()=>import("Pages/Movies"))
+const Movies = lazy(()=>import("../Pages/Movies"))
 const Cast = lazy(()=>import("Pages/Cast"))
 const MovieDetails = lazy(()=>import("Pages/MovieDetails"))
 const Reviews = lazy(()=>import("Pages/Reviews"))
@@ -22,6 +23,7 @@ const Reviews = lazy(()=>import("Pages/Reviews"))
       </Route>
       </Route>
     </Routes>
+    <GlobalStyle/>
     </div>
   );
 };
